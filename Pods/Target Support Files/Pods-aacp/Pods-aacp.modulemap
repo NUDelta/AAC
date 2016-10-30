@@ -1,0 +1,6 @@
+framework module Pods_aacp {
+  umbrella header "Pods-aacp-umbrella.h"
+
+  export *
+  module * { export * }
+}
