@@ -9,6 +9,7 @@ target 'aacp' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+  pod 'SwiftyJSON'
   # Pods for aacp
 
 end

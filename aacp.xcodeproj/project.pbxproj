@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2164B29438F0E2F828A7497B /* Pods_aacp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD219F7987DE329D810B2FB /* Pods_aacp.framework */; };
 		3E4A38A31DC04EEA003FE64E /* WorldMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4A38A21DC04EE9003FE64E /* WorldMapper.swift */; };
+		3E7368151DC6826000186510 /* NearbyLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7368141DC6826000186510 /* NearbyLocations.swift */; };
+		3EC0A01F1DC665AF005B8CC7 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0A01E1DC665AF005B8CC7 /* WeatherAPI.swift */; };
 		3EDE4D5E1DA83B4E00CC0446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDE4D5D1DA83B4E00CC0446 /* AppDelegate.swift */; };
 		3EDE4D601DA83B4E00CC0446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDE4D5F1DA83B4E00CC0446 /* ViewController.swift */; };
 		3EDE4D631DA83B4E00CC0446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDE4D611DA83B4E00CC0446 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		278CF8CC12162E8B113819DB /* Pods-aacp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aacp.release.xcconfig"; path = "Pods/Target Support Files/Pods-aacp/Pods-aacp.release.xcconfig"; sourceTree = "<group>"; };
 		3BD219F7987DE329D810B2FB /* Pods_aacp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aacp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4A38A21DC04EE9003FE64E /* WorldMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapper.swift; sourceTree = "<group>"; };
+		3E7368141DC6826000186510 /* NearbyLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyLocations.swift; sourceTree = "<group>"; };
+		3EC0A01E1DC665AF005B8CC7 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		3EDE4D5A1DA83B4E00CC0446 /* aacp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aacp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDE4D5D1DA83B4E00CC0446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EDE4D5F1DA83B4E00CC0446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 			children = (
 				3EDE4D5D1DA83B4E00CC0446 /* AppDelegate.swift */,
 				3EDE4D5F1DA83B4E00CC0446 /* ViewController.swift */,
+				3E7368141DC6826000186510 /* NearbyLocations.swift */,
+				3EC0A01E1DC665AF005B8CC7 /* WeatherAPI.swift */,
 				3EDE4D611DA83B4E00CC0446 /* Main.storyboard */,
 				3E4A38A21DC04EE9003FE64E /* WorldMapper.swift */,
 				3EDE4D641DA83B4E00CC0446 /* Assets.xcassets */,
@@ -225,8 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4A38A31DC04EEA003FE64E /* WorldMapper.swift in Sources */,
+				3EC0A01F1DC665AF005B8CC7 /* WeatherAPI.swift in Sources */,
 				3EDE4D601DA83B4E00CC0446 /* ViewController.swift in Sources */,
 				3EDE4D5E1DA83B4E00CC0446 /* AppDelegate.swift in Sources */,
+				3E7368151DC6826000186510 /* NearbyLocations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16CB2D8533EC3068E28EBDCC /* Pods-aacp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -361,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 278CF8CC12162E8B113819DB /* Pods-aacp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
